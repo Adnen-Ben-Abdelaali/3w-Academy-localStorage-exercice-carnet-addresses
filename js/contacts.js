@@ -4,7 +4,7 @@ const DOM_LISTE_DES_CONTCACTS = 'Contacts';
 function chargerContacts() {
   let maListeDeContacts = JSON.parse(localStorage.getItem(DOM_LISTE_DES_CONTCACTS));
 
-  if(maListeDeContacts.length === 0) {
+  if(maListeDeContacts == null) {
 
     return [];
   }
